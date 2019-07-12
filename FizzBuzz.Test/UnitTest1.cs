@@ -15,6 +15,8 @@ namespace FizzBuzz.Test
         [InlineData(27, "Fizz")]
         [InlineData(33, "Fizz")]
         [InlineData(36, "Fizz")]
+        [InlineData(66, "Fizz")]
+        [InlineData(78, "Fizz")]
         public void FizzTest(int number, string expected)
         {
             var sut = new FizzBuzzCalculate();
@@ -44,6 +46,8 @@ namespace FizzBuzz.Test
         [InlineData(15, "FizzBuzz")]
         [InlineData(30, "FizzBuzz")]
         [InlineData(45, "FizzBuzz")]
+        [InlineData(60, "FizzBuzz")]
+        [InlineData(75, "FizzBuzz")]
         public void FizzBuzzTest(int number, string expected)
         {
             var sut = new FizzBuzzCalculate();
@@ -58,8 +62,7 @@ namespace FizzBuzz.Test
         [InlineData(33, "Fizz")]
         [InlineData(34, "Fizz")]
         [InlineData(36, "Fizz")]
-        [InlineData(50, "Fizz")]
-        [InlineData(51, "Buzz")]
+        [InlineData(50, "Buzz")]
         [InlineData(52, "Buzz")]
         [InlineData(55, "Buzz")]
         [InlineData(36, "Fizz")]
@@ -68,7 +71,6 @@ namespace FizzBuzz.Test
         [InlineData(53, "FizzBuzz")]
         [InlineData(54, "FizzBuzz")]
         [InlineData(90, "FizzBuzz")]
-
         public void FindFizzBuzzWithDivisibleOrContains3And5Test(int number, string expected)
         {
             var sut = new FizzBuzzCalculate();
